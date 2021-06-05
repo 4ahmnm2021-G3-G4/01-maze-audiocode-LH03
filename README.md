@@ -1,8 +1,9 @@
 # 01-maze-audiocode-LH03
 
-### Project description: 
-This project serves as sample project for spatial audio. 
-Explore sound in its basics in virtual reality (VR).
+### Project description/concept: 
+This project is a 3D virtual reality game that focuses on spatial audio. The player is locked in a labyrinth and has to find his way to the exit with the help of sounds.
+First, the player must listen to find three croaking frogs that unlock a cauldron. 
+The three frogs must be emptied into this cauldron to produce the magic key. With this key, the player must unlock the exit door to escape from the labyrinth.
 
 ### Development platform: 
 OS: Windows 10, Game Engine: Unity 2019.1.14f1, Visual Studio 2019, Steam,  
@@ -29,7 +30,6 @@ Tested on Oculus Rift S
 Screenshots (concept and experience), Video
 
 ### Third party material: 
-(if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
 
 ### Project state: 
 2%/100% finished
@@ -39,4 +39,4 @@ Screenshots (concept and experience), Video
 
 ### Lessons Learned: 
 
-Copyright by smeerws :)
+Copyright by LH03:)

@@ -9,6 +9,7 @@ public class CollectFrogs : MonoBehaviour
     public AudioSource frog2;
     public AudioSource frog3;
     public GameObject cauldron;
+    public AudioSource caldronAppear;
         
     private void OnCollisionStay(Collision collision)
     {
@@ -33,6 +34,7 @@ public class CollectFrogs : MonoBehaviour
         if (frog[0] & frog[1] & frog[2])
         {
             cauldron.SetActive(true);
+            caldronAppear.Play();
         }
     }
 }

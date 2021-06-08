@@ -7,9 +7,10 @@ public class DoorMovement : MonoBehaviour
 
 
     [SerializeField] private Vector3 target = new Vector3(1, 1, 1);
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 0.1f;
     private bool isPlayerThroughDoor = false;
     public GameObject door;
+    public Collider doorCollider;
     public AudioSource doorCloseSound;
 
     void OnTriggerEnter(Collider col)
@@ -17,6 +18,7 @@ public class DoorMovement : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             isPlayerThroughDoor = true;
+            doorCollider.enabled = false;
         }
         // Moves the object to target position
 

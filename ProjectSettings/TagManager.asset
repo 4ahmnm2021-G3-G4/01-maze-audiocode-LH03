@@ -7,6 +7,10 @@ TagManager:
   - Frog 1
   - Frog 2
   - Frog 3
+  - Ladle
+  - Key
+  - Wall Collider
+  - Key Collider
   layers:
   - Default
   - TransparentFX

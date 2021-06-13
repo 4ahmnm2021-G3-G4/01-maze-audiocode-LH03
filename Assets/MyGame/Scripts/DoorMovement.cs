@@ -1,17 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorMovement : MonoBehaviour
 {
 
 
-    [SerializeField] private Vector3 target = new Vector3(1, 1, 1);
+    [SerializeField] private Vector3 target = new Vector3(0, 0, 2.3f);
     [SerializeField] private float speed = 0.1f;
     private bool isPlayerThroughDoor = false;
     public GameObject door;
     public Collider doorCollider;
     public AudioSource doorCloseSound;
+    public GameObject CollectFrogsSign;
+
+    public float timeRemaining = 10;
+    public bool timerIsRunning = false;
+
 
     void OnTriggerEnter(Collider col)
     {
@@ -19,6 +25,9 @@ public class DoorMovement : MonoBehaviour
         {
             isPlayerThroughDoor = true;
             doorCollider.enabled = false;
+            CollectFrogsSign.SetActive(true);
+            doorCloseSound.Play();
+            timerIsRunning = true;
         }
         // Moves the object to target position
 
@@ -30,10 +39,25 @@ public class DoorMovement : MonoBehaviour
         {
             //Debug.Log(target.ToString());
             door.transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
-            doorCloseSound.Play();
         }
 
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
+            else
+            {
+                Debug.Log("Time has run out!");
+                timeRemaining = 0;
+                timerIsRunning = false;
+                CollectFrogsSign.SetActive(false);
+
+            }
+
+        }
+
+
     }
-
-
 }

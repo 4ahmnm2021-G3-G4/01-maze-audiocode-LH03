@@ -9,8 +9,15 @@ public class CollectFrogs : MonoBehaviour
     public AudioSource frog2;
     public AudioSource frog3;
     public GameObject cauldron;
-    public AudioSource caldronAppear;
-        
+    public AudioSource cauldronBubbling;
+
+    public GameObject DropFrogsIntoCauldron;
+
+    public float timeRemaining = 10;
+    public bool timerIsRunning = false;
+
+    public bool areFrogsCollected;
+
     private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Frog 1")
@@ -34,7 +41,33 @@ public class CollectFrogs : MonoBehaviour
         if (frog[0] & frog[1] & frog[2])
         {
             cauldron.SetActive(true);
-            caldronAppear.Play();
+            cauldronBubbling.Play();
+            DropFrogsIntoCauldron.SetActive(true);
+            timerIsRunning = true;
+            areFrogsCollected = true;
+        }
+
+        void Update()
+        {
+            if (timerIsRunning)
+            {
+                if (timeRemaining > 0)
+                {
+                    timeRemaining -= Time.deltaTime;
+                }
+                else
+                {
+                    DropFrogsIntoCauldron.SetActive(false);
+                    timeRemaining = 0;
+                    timerIsRunning = false;
+                }
+
+                //if (frog[0])
+                //{
+                //    cauldron.SetActive(true);
+                //    cauldronBubbling.Play();
+                //}
+            }
         }
     }
 }

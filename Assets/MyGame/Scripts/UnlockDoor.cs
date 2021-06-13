@@ -6,6 +6,7 @@ public class UnlockDoor : MonoBehaviour
 {
     public Rigidbody key;
     public bool isKeyinDoor = false;
+    public AudioSource insertKeyDoor;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -14,6 +15,7 @@ public class UnlockDoor : MonoBehaviour
             Debug.Log("Works");
             key.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             isKeyinDoor = true;
+            insertKeyDoor.Play();
         }
 
 

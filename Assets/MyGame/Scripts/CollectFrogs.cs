@@ -47,6 +47,15 @@ public class CollectFrogs : MonoBehaviour
             areFrogsCollected = true;
         }
 
+        //if (frog[2])
+        //{
+        //    cauldron.SetActive(true);
+        //    cauldronBubbling.Play();
+        //    DropFrogsIntoCauldron.SetActive(true);
+        //    timerIsRunning = true;
+        //    areFrogsCollected = true;
+        //}
+
         void Update()
         {
             if (timerIsRunning)
@@ -62,11 +71,7 @@ public class CollectFrogs : MonoBehaviour
                     timerIsRunning = false;
                 }
 
-                //if (frog[0])
-                //{
-                //    cauldron.SetActive(true);
-                //    cauldronBubbling.Play();
-                //}
+ 
             }
         }
     }

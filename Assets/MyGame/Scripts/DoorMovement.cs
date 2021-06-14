@@ -21,8 +21,10 @@ public class DoorMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
+        Debug.Log("OnTriggetrDoor" + col.gameObject.name);
         if (col.gameObject.tag == "Player")
         {
+            
             isPlayerThroughDoor = true;
             doorCollider.enabled = false;
             CollectFrogsSign.SetActive(true);

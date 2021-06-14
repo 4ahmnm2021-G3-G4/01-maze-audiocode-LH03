@@ -17,9 +17,10 @@ public class ShowInstructionExitDoor : MonoBehaviour
     {
         if (col.gameObject.tag == "Player" & openedDoor.isDoorUnlocked)
         {
+            WinSign.SetActive(true);
             timerIsRunning = true;
             timeRemaining = 10;
-            WinSign.SetActive(true);
+            
         }
 
         if (col.gameObject.tag == "Player" & collectedFrogs.areFrogsCollected)

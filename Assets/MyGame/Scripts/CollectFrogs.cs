@@ -18,7 +18,7 @@ public class CollectFrogs : MonoBehaviour
 
     public bool areFrogsCollected;
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Frog 1")
         {
@@ -42,16 +42,17 @@ public class CollectFrogs : MonoBehaviour
         {
             cauldron.SetActive(true);
             cauldronBubbling.Play();
-            DropFrogsIntoCauldron.SetActive(true);
+            //DropFrogsIntoCauldron.SetActive(true);
             timerIsRunning = true;
             areFrogsCollected = true;
         }
 
-        //if (frog[2])
+        //if (frog[1])
         //{
+        //    Debug.Log("Frog 2 works");
         //    cauldron.SetActive(true);
         //    cauldronBubbling.Play();
-        //    DropFrogsIntoCauldron.SetActive(true);
+        //    //DropFrogsIntoCauldron.SetActive(true);
         //    timerIsRunning = true;
         //    areFrogsCollected = true;
         //}

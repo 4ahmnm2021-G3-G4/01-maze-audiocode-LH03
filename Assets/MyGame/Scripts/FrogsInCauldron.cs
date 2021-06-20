@@ -10,8 +10,8 @@ public class FrogsInCauldron : MonoBehaviour
     public AudioSource frogDrop;
 
     public GameObject rotationSignCauldron;
-    public GameObject key;
-    public GameObject StirCauldron;
+    public GameObject ladle;
+    //public GameObject StirCauldron;
 
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
@@ -27,7 +27,7 @@ public class FrogsInCauldron : MonoBehaviour
         {
 
             frogHitCauldron[0] = true;
-            Debug.Log(frogHitCauldron[0]);
+            Debug.Log(frogHitCauldron[0] + "The frog was being hit");
             frogDrop.Play();
             frog1.SetActive(false);
         }
@@ -45,9 +45,10 @@ public class FrogsInCauldron : MonoBehaviour
         }
         if (frogHitCauldron[0])
         {
-            key.SetActive(true);
-            StirCauldron.SetActive(true);
+            ladle.SetActive(true);
+            //StirCauldron.SetActive(true);
             timerIsRunning = true;
+            rotationSignCauldron.SetActive(true);
 
         }
 

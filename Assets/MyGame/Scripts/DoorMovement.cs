@@ -8,7 +8,7 @@ public class DoorMovement : MonoBehaviour
 
 
     [SerializeField] private Vector3 target = new Vector3(0, 0, 2.3f);
-    [SerializeField] private float speed = 0.1f;
+    [SerializeField] private float speed = 0.001f;
     private bool isPlayerThroughDoor = false;
     public GameObject door;
     public Collider doorCollider;
@@ -27,7 +27,7 @@ public class DoorMovement : MonoBehaviour
             
             isPlayerThroughDoor = true;
             doorCollider.enabled = false;
-            CollectFrogsSign.SetActive(true);
+            //CollectFrogsSign.SetActive(true);
             doorCloseSound.Play();
             timerIsRunning = true;
         }

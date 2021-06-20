@@ -3212,7 +3212,6 @@ GameObject:
   - component: {fileID: 424341937}
   - component: {fileID: 424341936}
   - component: {fileID: 424341935}
-  - component: {fileID: 424341934}
   m_Layer: 0
   m_Name: ExitDoorCollider
   m_TagString: Untagged
@@ -3220,24 +3219,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &424341934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424341933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd0af9e58c912f140a733dc59bdd688f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeRemaining: 10
-  timerIsRunning: 0
-  InsertKeySign: {fileID: 0}
-  WinSign: {fileID: 0}
-  openedDoor: {fileID: 266999082}
-  collectedFrogs: {fileID: 2090727148}
 --- !u!65 &424341935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4676,15 +4657,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.71
+      value: -3.39
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.94
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.33
+      value: -14.4
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7957,7 +7938,6 @@ GameObject:
   - component: {fileID: 1042499273}
   - component: {fileID: 1042499272}
   - component: {fileID: 1042499271}
-  - component: {fileID: 1042499270}
   m_Layer: 0
   m_Name: Key Tryout (1)
   m_TagString: Untagged
@@ -7965,18 +7945,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1042499270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042499269}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354e0e2846c225c4f971898b5c86b21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1042499271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12386,9 +12354,7 @@ GameObject:
   - component: {fileID: 1554128375}
   - component: {fileID: 1554128374}
   - component: {fileID: 1554128373}
-  - component: {fileID: 1554128376}
   - component: {fileID: 1554128372}
-  - component: {fileID: 1554128377}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -12637,32 +12603,6 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &1554128376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554128370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354e0e2846c225c4f971898b5c86b21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1554128377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554128370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cb192d2e892a7740802cc686c43c764, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cauldronPackage: {fileID: 1270572546}
-  keyInHand: {fileID: 1554128372}
 --- !u!1 &1585826023
 GameObject:
   m_ObjectHideFlags: 0
@@ -16510,7 +16450,6 @@ GameObject:
   - component: {fileID: 2074602577}
   - component: {fileID: 2074602576}
   - component: {fileID: 2074602575}
-  - component: {fileID: 2074602574}
   m_Layer: 0
   m_Name: Key Tryout
   m_TagString: Untagged
@@ -16518,18 +16457,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &2074602574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074602573}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354e0e2846c225c4f971898b5c86b21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2074602575
 MonoBehaviour:
   m_ObjectHideFlags: 0

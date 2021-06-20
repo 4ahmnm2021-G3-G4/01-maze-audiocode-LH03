@@ -12,7 +12,7 @@ public class UnlockDoor : MonoBehaviour
     {
         if (collision.gameObject.tag == "Key")
         {
-            Debug.Log("Works");
+            Debug.Log("Key in door");
             key.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             isKeyinDoor = true;
             insertKeyDoor.Play();

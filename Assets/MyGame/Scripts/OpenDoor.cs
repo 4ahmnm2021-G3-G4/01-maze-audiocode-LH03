@@ -20,6 +20,9 @@ public class OpenDoor : MonoBehaviour
     public AudioSource winSound;
     public AudioSource openDoor;
 
+    public MeshRenderer keyholeCollider;
+    public GameObject keyHoleCover;
+
 
 
     private void OnTriggerEnter(Collider collision)
@@ -31,7 +34,6 @@ public class OpenDoor : MonoBehaviour
         if (collision.gameObject.tag == "Key" & keyFits.isKeyinDoor)
         {
             //keyCollider.SetActive(false);
-            Debug.Log("Works");
             counter++;
             Debug.Log("Counter " + counter);
             keyTurnSound.Play();
@@ -42,28 +44,13 @@ public class OpenDoor : MonoBehaviour
         if (counter == 3)
         {
             isDoorUnlocked = true;
-            //arrayColliders[0].SetActive(false);
-            //arrayColliders[1].SetActive(false);
-            //arrayColliders[2].SetActive(false);
-            //arrayColliders[3].SetActive(false);
             keyTransform.SetActive(false);
             openDoor.Play();
             winSound.Play();
+            exitDoor.SetActive(false);
+            keyHoleCover.SetActive(false);
+            keyHoleCover.SetActive(false);
         }
     }
 
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        {
-            if (isDoorUnlocked)
-            {
-                Debug.Log("positionieren zu: " + target.ToString());
-                exitDoor.transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
-            }
-
-        }
-    }
 }

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Valve.VR;
+﻿using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
@@ -21,6 +18,6 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CountCollides : MonoBehaviour
 {
@@ -12,6 +10,7 @@ public class CountCollides : MonoBehaviour
     public AudioSource ladleHitsCauldron;
     public GameObject cauldron;
     public GameObject ladle;
+    public GameObject arrowSign;
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Ladle")
@@ -26,12 +25,11 @@ public class CountCollides : MonoBehaviour
 
             if (counter == 4)
             {
-                //Debug.Log("It works");
                 key.SetActive(true);
                 keyAppears.Play();
                 cauldron.SetActive(false);
                 ladle.SetActive(false);
-
+                arrowSign.SetActive(true);
             }
 
         }

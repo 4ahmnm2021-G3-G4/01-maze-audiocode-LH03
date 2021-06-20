@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CollectFrogs : MonoBehaviour
 {
@@ -10,13 +8,7 @@ public class CollectFrogs : MonoBehaviour
     public AudioSource soundFrog3;
     public GameObject cauldron;
     public AudioSource cauldronBubbling;
-
-    public GameObject DropFrogsIntoCauldron;
     public Transform basket;
-
-    public float timeRemaining = 10;
-    public bool timerIsRunning = false;
-
     public bool areFrogsCollected;
 
     public GameObject frog1;
@@ -50,38 +42,7 @@ public class CollectFrogs : MonoBehaviour
         {
             cauldron.SetActive(true);
             cauldronBubbling.Play();
-            //DropFrogsIntoCauldron.SetActive(true);
-            timerIsRunning = true;
             areFrogsCollected = true;
-        }
-
-        //if (frog[1])
-        //{
-        //    Debug.Log("Frog 2 works");
-        //    cauldron.SetActive(true);
-        //    cauldronBubbling.Play();
-        //    //DropFrogsIntoCauldron.SetActive(true);
-        //    timerIsRunning = true;
-        //    areFrogsCollected = true;
-        //}
-
-        void Update()
-        {
-            if (timerIsRunning)
-            {
-                if (timeRemaining > 0)
-                {
-                    timeRemaining -= Time.deltaTime;
-                }
-                else
-                {
-                    DropFrogsIntoCauldron.SetActive(false);
-                    timeRemaining = 0;
-                    timerIsRunning = false;
-                }
-
- 
-            }
         }
     }
 }

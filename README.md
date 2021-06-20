@@ -32,8 +32,14 @@ Tested on Oculus Rift S
 
 ### Visuals: 
 
-#### Screenshots
+#### Overview
+![screenshot] (img/Overview.png)
 
+#### Entrance
+![screenshot] (img/Entrance.png)
+
+#### Cauldron
+![screenshot] (img/Cauldron.png)
 
 ### Third party material: 
 

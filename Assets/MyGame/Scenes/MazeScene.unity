@@ -14612,15 +14612,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9253314b60c98334fae13cd5143811a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frog1: {fileID: 1432834199}
-  frog2: {fileID: 405952321}
-  frog3: {fileID: 177547489}
+  soundFrog1: {fileID: 1432834199}
+  soundFrog2: {fileID: 405952321}
+  soundFrog3: {fileID: 177547489}
   cauldron: {fileID: 899884572}
   cauldronBubbling: {fileID: 1334607679}
   DropFrogsIntoCauldron: {fileID: 0}
+  basket: {fileID: 1611751748}
   timeRemaining: 10
   timerIsRunning: 0
   areFrogsCollected: 0
+  frog1: {fileID: 1432834198}
+  frog2: {fileID: 405952319}
+  frog3: {fileID: 177547485}
 --- !u!4 &1611751748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: fe4a4105b8bc4c04b9954143b0cdd3bc,
@@ -14805,15 +14809,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9253314b60c98334fae13cd5143811a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frog1: {fileID: 1432834199}
-  frog2: {fileID: 405952321}
-  frog3: {fileID: 177547489}
+  soundFrog1: {fileID: 0}
+  soundFrog2: {fileID: 0}
+  soundFrog3: {fileID: 0}
   cauldron: {fileID: 1270572546}
   cauldronBubbling: {fileID: 1839142276}
   DropFrogsIntoCauldron: {fileID: 0}
+  basket: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
   areFrogsCollected: 0
+  frog1: {fileID: 1432834199}
+  frog2: {fileID: 405952321}
+  frog3: {fileID: 177547489}
 --- !u!65 &1636036165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15209,15 +15217,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9253314b60c98334fae13cd5143811a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frog1: {fileID: 1432834199}
-  frog2: {fileID: 405952321}
-  frog3: {fileID: 177547489}
+  soundFrog1: {fileID: 0}
+  soundFrog2: {fileID: 0}
+  soundFrog3: {fileID: 0}
   cauldron: {fileID: 1270572546}
   cauldronBubbling: {fileID: 1839142276}
   DropFrogsIntoCauldron: {fileID: 0}
+  basket: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
   areFrogsCollected: 0
+  frog1: {fileID: 1432834199}
+  frog2: {fileID: 405952321}
+  frog3: {fileID: 177547489}
 --- !u!1 &1749172341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1561061333865050900, guid: 89cefa1b8dfe3e547a4eabc79c3031ba,
@@ -19938,15 +19950,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9253314b60c98334fae13cd5143811a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frog1: {fileID: 915347712}
-  frog2: {fileID: 2137811309}
-  frog3: {fileID: 908257514}
+  soundFrog1: {fileID: 0}
+  soundFrog2: {fileID: 0}
+  soundFrog3: {fileID: 0}
   cauldron: {fileID: 1270572546}
   cauldronBubbling: {fileID: 1839142276}
   DropFrogsIntoCauldron: {fileID: 0}
+  basket: {fileID: 0}
   timeRemaining: 10
   timerIsRunning: 0
   areFrogsCollected: 0
+  frog1: {fileID: 915347712}
+  frog2: {fileID: 2137811309}
+  frog3: {fileID: 908257514}
 --- !u!1001 &2091795945
 PrefabInstance:
   m_ObjectHideFlags: 0

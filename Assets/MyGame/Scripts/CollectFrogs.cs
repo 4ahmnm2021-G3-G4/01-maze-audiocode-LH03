@@ -5,37 +5,45 @@ using UnityEngine;
 public class CollectFrogs : MonoBehaviour
 {
     bool[] frog = new bool[3];
-    public AudioSource frog1;
-    public AudioSource frog2;
-    public AudioSource frog3;
+    public AudioSource soundFrog1;
+    public AudioSource soundFrog2;
+    public AudioSource soundFrog3;
     public GameObject cauldron;
     public AudioSource cauldronBubbling;
 
     public GameObject DropFrogsIntoCauldron;
+    public Transform basket;
 
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
 
     public bool areFrogsCollected;
 
+    public GameObject frog1;
+    public GameObject frog2;
+    public GameObject frog3;
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Frog 1")
+        if (collision.gameObject == frog1)
         {
             frog[0] = true;
-            frog1.Stop();
+            soundFrog1.Stop();
+            frog1.transform.SetParent(basket);
         }
 
-        if (collision.gameObject.tag == "Frog 2")
+        if (collision.gameObject == frog2)
         {
             frog[1] = true;
-            frog2.Stop();
+            soundFrog2.Stop();
+            frog2.transform.SetParent(basket);
         }
 
-        if (collision.gameObject.tag == "Frog 3")
+        if (collision.gameObject == frog3)
         {
             frog[2] = true;
-            frog3.Stop();
+            soundFrog3.Stop();
+            frog3.transform.SetParent(basket);
         }
 
         if (frog[0] & frog[1] & frog[2])

@@ -45,4 +45,10 @@ public class CollectFrogs : MonoBehaviour
             areFrogsCollected = true;
         }
     }
+    private void OnCollisionExit(Collision collision)
+    {
+        frog1.transform.SetParent(null);
+        frog2.transform.SetParent(null);
+        frog3.transform.SetParent(null);
+    }
 }

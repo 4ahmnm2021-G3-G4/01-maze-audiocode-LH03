@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class OpenDoor : MonoBehaviour
 {
     public int counter;
@@ -25,6 +24,7 @@ public class OpenDoor : MonoBehaviour
     {
         GameObject[] arrayColliders = GameObject.FindGameObjectsWithTag("Wall Collider");
 
+        //If the key is in the door a unlock sound gets played every time the key is turned in the look
         if (collision.gameObject.tag == "Key" & keyFits.isKeyinDoor)
         {
             counter++;
@@ -32,6 +32,8 @@ public class OpenDoor : MonoBehaviour
             keyTurnSound.Play();
             keySetCollider.SetActive(false);
         }
+
+        //After three turns the door is unlocked and can open, the player has won the game
         if (counter == 3)
         {
             isDoorUnlocked = true;

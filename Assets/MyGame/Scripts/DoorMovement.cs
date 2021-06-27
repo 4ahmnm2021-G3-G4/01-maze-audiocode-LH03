@@ -6,9 +6,10 @@ public class DoorMovement : MonoBehaviour
     public AudioSource doorCloseSound;
     public AudioSource startVoiceSound;
 
+    // When the Player enters the trigger, the entry door closes and audio is being played
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Trigger Dooor" + col.gameObject.name);
+    
         if (col.gameObject.tag == "Player")
         {
             

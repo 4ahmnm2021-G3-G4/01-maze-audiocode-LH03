@@ -11,8 +11,10 @@ public class CountCollides : MonoBehaviour
     public GameObject cauldron;
     public GameObject ladle;
     public GameObject arrowSign;
+
     private void OnTriggerEnter(Collider collision)
     {
+        //Counter counts the times the ladle hits the collider
         if (collision.gameObject.tag == "Ladle")
         {
             counter++;
@@ -23,6 +25,7 @@ public class CountCollides : MonoBehaviour
                 rotationSign.SetActive(false);
             }
 
+            //If the colliders was hit four times the key appears and the cauldron disappears
             if (counter == 4)
             {
                 key.SetActive(true);

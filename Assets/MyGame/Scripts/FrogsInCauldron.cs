@@ -7,6 +7,7 @@ public class FrogsInCauldron : MonoBehaviour
     public GameObject ladle;
     bool[] frogHitCauldron = new bool[3];
 
+    //When all the frogs are in the cauldron, the ladle is activated so that the Player can stir the potion
     private void OnCollisionEnter(Collision collision)
     {
         GameObject frog1 = GameObject.FindGameObjectWithTag("Frog 1");

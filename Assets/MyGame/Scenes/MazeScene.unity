@@ -2126,11 +2126,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458569053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.007, y: 0, z: 0}
   m_LocalScale: {x: 0.51312, y: 0.032204438, z: 0.51312}
   m_Children: []
   m_Father: {fileID: 1611751748}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &458569055
 CapsuleCollider:
@@ -2208,7 +2208,7 @@ MonoBehaviour:
   soundFrog3: {fileID: 177547489}
   cauldron: {fileID: 899884572}
   cauldronBubbling: {fileID: 1334607679}
-  basket: {fileID: 1611751748}
+  basket: {fileID: 458569054}
   areFrogsCollected: 0
   frog1: {fileID: 1432834198}
   frog2: {fileID: 405952319}
@@ -2339,7 +2339,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c88ddfc2d8a482149958f1f209ef158e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2466,7 +2466,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 11634b7610e65bd47b0c2cd73f563aaa, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2685,12 +2685,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: fe4a4105b8bc4c04b9954143b0cdd3bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.954
+      value: -1.981
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fe4a4105b8bc4c04b9954143b0cdd3bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.381
+      value: 1.436
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fe4a4105b8bc4c04b9954143b0cdd3bc,
         type: 3}
@@ -4760,20 +4760,6 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &1165174714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165174709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cb192d2e892a7740802cc686c43c764, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cauldronPackage: {fileID: 899884572}
-  keyInHand: {fileID: 1165174710}
 --- !u!64 &1165174715
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6370,7 +6356,6 @@ MonoBehaviour:
   key: {fileID: 1165174712}
   isKeyinDoor: 0
   insertKeyDoor: {fileID: 1509802624}
-  winSound: {fileID: 0}
 --- !u!1001 &1518319023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6794,121 +6779,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04014539, y: 0.04014538, z: 0.0037942391}
   m_Center: {x: 0.020072695, y: -0.020072697, z: -0.0018971207}
---- !u!1 &1709192950
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1709192951}
-  - component: {fileID: 1709192954}
-  - component: {fileID: 1709192953}
-  - component: {fileID: 1709192952}
-  - component: {fileID: 1709192955}
-  m_Layer: 0
-  m_Name: FrogTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1709192951
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709192950}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.036}
-  m_LocalScale: {x: 0.54491, y: 0.0014649907, z: 0.54491}
-  m_Children: []
-  m_Father: {fileID: 1611751748}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1709192952
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709192950}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!23 &1709192953
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709192950}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1709192954
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709192950}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1709192955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709192950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9253314b60c98334fae13cd5143811a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundFrog1: {fileID: 0}
-  soundFrog2: {fileID: 0}
-  soundFrog3: {fileID: 0}
-  cauldron: {fileID: 0}
-  cauldronBubbling: {fileID: 0}
-  basket: {fileID: 0}
-  areFrogsCollected: 0
-  frog1: {fileID: 1432834199}
-  frog2: {fileID: 405952321}
-  frog3: {fileID: 177547489}
 --- !u!1 &1750655644
 GameObject:
   m_ObjectHideFlags: 0
@@ -6936,12 +6806,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750655644}
-  m_LocalRotation: {x: -0.70090926, y: -0, z: -0, w: 0.71325046}
-  m_LocalPosition: {x: 6.83, y: -10.099998, z: -3.4899993}
-  m_LocalScale: {x: 1.377325, y: 1.3773249, z: 1.377325}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5006512736763877705}
-  m_RootOrder: 11
+  m_Father: {fileID: 5091031726914983508}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1750655646
 MonoBehaviour:
@@ -7193,17 +7063,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a6082840c19ea3f4fa19801a88bf7f59,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.34
+      value: 10.214
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6082840c19ea3f4fa19801a88bf7f59,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.138
+      value: 1.154
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6082840c19ea3f4fa19801a88bf7f59,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.73
+      value: -2.275
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a6082840c19ea3f4fa19801a88bf7f59,
         type: 3}
@@ -9433,7 +9303,6 @@ Transform:
   - {fileID: 3104676592607178225}
   - {fileID: 8920657978796703991}
   - {fileID: 5091031726914983508}
-  - {fileID: 1750655645}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9484,7 +9353,8 @@ Transform:
   m_LocalRotation: {x: -0.70090926, y: -0, z: -0, w: 0.71325046}
   m_LocalPosition: {x: 6.83, y: -10.099998, z: -3.4899993}
   m_LocalScale: {x: 1.377325, y: 1.3773249, z: 1.377325}
-  m_Children: []
+  m_Children:
+  - {fileID: 1750655645}
   m_Father: {fileID: 5006512736763877705}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

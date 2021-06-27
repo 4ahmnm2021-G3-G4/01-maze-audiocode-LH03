@@ -5,8 +5,8 @@ public class UnlockDoor : MonoBehaviour
     public Rigidbody key;
     public bool isKeyinDoor = false;
     public AudioSource insertKeyDoor;
-    public AudioSource winSound;
 
+    //Detects if the key is in the door and then plays a sound if it is
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Key")

@@ -17,7 +17,6 @@ public class FrogsInCauldron : MonoBehaviour
         if (collision.gameObject.tag == "Frog 1")
         {
             frogHitCauldron[0] = true;
-            Debug.Log(frogHitCauldron[0] + "The frog 1 was being hit");
             frogDrop.Play();
             frog1.SetActive(false);
             frog1.transform.SetParent(null);
@@ -25,7 +24,6 @@ public class FrogsInCauldron : MonoBehaviour
         if (collision.gameObject.tag == "Frog 2")
         {
             frogHitCauldron[1] = true;
-            Debug.Log(frogHitCauldron[1] + "The frog 2 was being hit");
             frogDrop.Play();
             frog2.SetActive(false);
             frog2.transform.SetParent(null);
@@ -33,7 +31,6 @@ public class FrogsInCauldron : MonoBehaviour
         if (collision.gameObject.tag == "Frog 3")
         {
             frogHitCauldron[2] = true;
-            Debug.Log(frogHitCauldron[2] + "The frog 3 was being hit");
             frogDrop.Play();
             frog3.SetActive(false);
             frog3.transform.SetParent(null);

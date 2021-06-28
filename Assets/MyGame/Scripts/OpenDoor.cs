@@ -28,7 +28,6 @@ public class OpenDoor : MonoBehaviour
         if (collision.gameObject.tag == "Key" & keyFits.isKeyinDoor)
         {
             counter++;
-            Debug.Log("Counter " + counter);
             keyTurnSound.Play();
             keySetCollider.SetActive(false);
         }

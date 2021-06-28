@@ -12,7 +12,6 @@ public class DoorMovement : MonoBehaviour
     
         if (col.gameObject.tag == "Player")
         {
-            
             doorCloseSound.Play();
             startVoiceSound.Play();
             door.SetActive(true);

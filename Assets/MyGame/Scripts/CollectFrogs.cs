@@ -44,12 +44,4 @@ public class CollectFrogs : MonoBehaviour
             areFrogsCollected = true;
         }
     }
-
-    //When the frogs are leave the trigger, they get unparented from the basket
-    private void OnTriggerExit(Collider collision)
-    {
-        frog1.transform.SetParent(null);
-        frog2.transform.SetParent(null);
-        frog3.transform.SetParent(null);
-    }
 }

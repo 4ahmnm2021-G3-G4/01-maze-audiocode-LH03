@@ -73,11 +73,11 @@ Skybox: Unity Asset Store "AllSky Free - 10 Sky / Skybox Set"
 Freepik and Flaticon
 
 ### Project state: 
-99%/100% finished
+100%/100% finished
 <progress max="100" value="2"></progress>
 
 ### Limitations: 
-Some things don't work as expected or just not at all
+Some things don't work as expected, for example the basket and the key.
 
 
 ### Lessons Learned: 
